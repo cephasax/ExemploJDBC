@@ -18,4 +18,6 @@ public class Operacao {
 		System.out.println("Cliente " + cliente.getNome()+ " cadastrado.");
 	}
 	
+	//ADICIONE DEMAIS OPERACOES AQUI
+	
 }

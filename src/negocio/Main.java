@@ -8,6 +8,8 @@ import modelo.Cliente;
 
 public class Main {
 
+	//COMPLETE O CODIGO 
+
 	public static void main(String[] args) {
 		
 		Cliente c = new Cliente();
@@ -16,7 +18,7 @@ public class Main {
 		
 		try {
 			Operacao.inserirCliente(c);
-			//Operacao.inserirConta(conta);
+			//Operacao.inserirConta(conta);			
 			//Operacao.gerarHistorico(historico);
 			
 		} catch (SQLException e) {
@@ -24,8 +26,10 @@ public class Main {
 			e.printStackTrace();
 		}
 		
+		// realize alguma operação que modifique valores em uma conta já cadastrada
+		
 		//consultarContas();
-		//consultarExtrato();
+		//consultarExtrato(Cliente c);
 		
 		try {
 			Conexao.getConnection().close();
@@ -35,16 +39,11 @@ public class Main {
 		
 	}
 
-	private static Date Data() {
-		Date data = new Date(07-12-2013);    
-		return data;
+	private static void consultarExtrato(Cliente c) {
+		//Operacao.consultaTodosExtratos(Cliente c);
 	}
 
-	private static void consultarExtrato() {
-		//Operacao.consultaTodosExtratos();
-	}
-
-	private static void consultarContas() {
-		// TODO Auto-generated method stub
+	private static void consultarContas(Cliente c) {
+		//Operacao.consultaContas();
 	}
 }
